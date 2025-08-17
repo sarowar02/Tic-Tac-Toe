@@ -19,7 +19,7 @@ function calculateWinner(squares) {
     for (let i = 0; i < win_lines.length; i++) {
         const [a, b, c] = win_lines[i];
 
-        if (squares[a] == squares[b] && squares[b] == squares[c]) return squares[a];
+        if (squares[a] === squares[b] && squares[b] === squares[c]) return squares[a];
     }
 
     return null;
